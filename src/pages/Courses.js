@@ -6,7 +6,7 @@ const Courses = () => {
   useEffect(() => {
     const fetchCourses = async () => {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:8000/api/courses', {
+      const response = await fetch('https://backend-qp5o.onrender.com/api/courses', {
         headers: { Authorization: `Bearer ${token}` },
       });
 

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8000/api'; // Replace with your backend URL if deployed
+const BASE_URL = 'https://backend-qp5o.onrender.com/api'; // Replace with your backend URL if deployed
 
 // Authentication APIs
 export const registerUser = (data) => axios.post(`${BASE_URL}/auth/register`, data);
